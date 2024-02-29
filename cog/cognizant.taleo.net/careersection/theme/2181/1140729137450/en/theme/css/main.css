@@ -1,0 +1,950 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --------------- Font Face Rule --------------- */	
+/*@font-face {	
+	font-family: 'ProximaNova-Reg';
+	src: url('../objects/custom-fonts/ProximaNova-Reg.otf');
+    src: url('../objects/custom-fonts/ProximaNova-Regular.ttf') format('truetype'),
+         url('../objects/custom-fonts/ProximaNova-Regular.woff') format('woff');
+	}*/
+	
+@font-face {
+  font-family: Interstate-LightCondensed;
+  src: url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/Interstate-LightCondensed.otf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/interstatelightcondensed.ttf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/interstatelightcondensed.woff");
+}
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Bold.otf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Bold.ttf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Bold.woff");
+}
+@font-face {
+  font-family: ProximaNova-Reg;
+  src: url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Reg.otf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Regular.ttf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Regular.woff"); 
+}
+@font-face {
+  font-family: ProximaNova-Light;
+  src: url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Light.otf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Light.ttf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Light.woff");
+}
+@font-face {
+  font-family: ProximaNova-Sbold;
+  src: url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Sbold.otf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Semibold.ttf"),
+       url("https://cognizant.taleo.net/careersection/theme/2181/1140729137450/en/theme/objects/custom-fonts/ProximaNova-Sbold.woff");
+}
+
+/* --------------- Font Face Rule End --------------- */
+
+* { font-family: "ProximaNova-Reg","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;}
+
+html { background: none;}
+
+html, body { width: 100%; min-height: 100%;}
+
+table, tr, td, a, p,
+span, div, form, input, ul, ol,
+button, dl, dt em, i, font, label, b, strong { font-family: "ProximaNova-Reg","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+    font-family: sans-serif;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 100%;
+	font-family: "ProximaNova-Reg","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+	
+.wrap {
+	width: 1050px;
+	margin: 0 auto;
+	}
+
+a { cursor: pointer;}
+a img { border: 0;}
+.floatLeft { float: left;}
+.floatRight { float: right;}
+#wrapper a:hover { text-decoration: none;}
+#wrapper .hidden-audible { padding: 0 !important;}
+
+#jobportal img {
+    border: 0 none;
+    height: auto;
+    vertical-align: middle;
+	}
+	
+#jobportal img, #jobportal image { margin: auto; width: auto;}
+	
+/*************** Clearfix *****************/
+.clearfix::before, 
+.clearfix::after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+	}
+	
+.clearfix::after { clear: both;}
+
+/*************** ----- Layout Style ----- *****************/	
+#wrapper {
+	position: relative;
+	}
+
+/*************** ----- Header Section ----- *****************/	
+#cog-header {
+	font-size: 150%;
+	}
+	
+#cog-header .hdr-wrap::before, 
+#cog-header .hdr-wrap::after,
+.cog-header .clearfix::before, 
+.cog-header .clearfix::after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+	}
+	
+#cog-header .clearfix::after { clear: both;}
+
+.hdr-wrap {
+	width: 100%;
+	margin: 0 auto;
+	width: 970px;
+	}
+	
+.hdr-wrap .clearfix::before, 
+.hdr-wrap .clearfix::after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+	
+.hdr-wrap ol, .hdr-wrap ul {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+    list-style: outside none none;
+	}
+	
+.hdr-wrap .cog-hdr {
+    margin: 0;
+    padding: 0.3em 0 0;
+	}
+
+.hdr-wrap .cog-hdr .logo {
+    display: block;
+    float: left;
+    padding: 1.6em 0;
+    width: 20.6186%;
+	text-align: center;
+	}
+	
+.hdr-wrap .cog-hdr .mainnav {
+    float: left;
+    width: 48.23%;
+	padding: 2.875em 0 0;
+    margin: 0 0 2.188em;
+	}
+	
+.hdr-wrap .cog-hdr .mainnav ul {
+    float: right;
+    letter-spacing: 0.0015em;
+    margin-right: -0.985em;
+	}
+	
+.hdr-wrap .cog-hdr .mainnav ul li { float: left;}
+	
+.hdr-wrap .cog-hdr .mainnav ul li.first a { letter-spacing: 0.009em}
+.hdr-wrap .cog-hdr .mainnav ul li a {
+    color: #4cb3cf;
+    display: block;
+    float: left;
+    font-size: 1.17em;
+    margin: 0 0.56em;
+    text-transform: capitalize;
+	}
+	
+.hdr-wrap .cog-hdr .mainnav ul li a:hover { color: #00728f;}
+
+.hdr-wrap .cog-hdr .staticnav ul { margin: 0 0 0.515em;}	
+.hdr-wrap .cog-hdr .staticnav {
+    width: 28%;
+	margin: 0;
+    float: right;
+    padding: 0.875em 0 0;
+	}
+	
+.hdr-wrap .cog-hdr .staticnav ul li {
+    float: left;
+    line-height: 1em;
+	}
+	
+.hdr-wrap .cog-hdr .staticnav ul li.last { float: right;}
+	
+.hdr-wrap .cog-hdr .staticnav li a.first { padding-left: 0;}
+.hdr-wrap .cog-hdr .staticnav li a.last { color: #4cb3cf; float: left;}
+.hdr-wrap .cog-hdr .staticnav li a {
+    color: #000;
+    float: left;
+    font-size: 0.68em;
+    padding: 0 0.4em;
+	text-decoration: none;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+	}
+	
+#wrapper .hdr-wrap .cog-hdr .staticnav ul li a.active, 
+#wrapper .hdr-wrap .cog-hdr .staticnav ul li a:hover {
+	color: #69bcde;
+	text-decoration: underline;
+	}
+	
+.hdr-wrap .logn-search {
+    padding: 0;
+    position: relative;
+    background: #e0e0e0 none repeat scroll 0 0;
+	}
+	
+.hdr-wrap .row-fluid::before, 
+.hdr-wrap .row-fluid::after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+	}
+
+.hdr-wrap .row-fluid::after { clear: both;}
+
+
+/*************** Search *****************/
+.hdr-wrap input.search-box[type="text"], 
+.hdr-wrap .search-btn {
+    border: 0 none;
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    line-height: 2em;
+    margin: 0 0 0 3%;
+    text-align: left;
+    width: 93%;
+}
+
+.hdr-wrap input.search-box[type="text"], 
+.hdr-wrap .search-btn {
+    border: 0 none;
+    float: left;
+    font-style: normal;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0 0 3%;
+    text-align: left;
+    width: 93%;
+    font-family: "ProximaNova-Reg","Franklin Gothic","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+
+.hdr-wrap .search-btn {
+    border: 0 none;
+    cursor: pointer;
+    height: 2em;
+    margin: 0;
+    right: 0;
+    width: 8%;
+    z-index: 2;
+    position: absolute;
+	}
+	
+.hdr-wrap .search-box, 
+.hdr-wrap .search-btn {
+    border: 0 none;
+    color: #fff;
+    float: left;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0 0 3%;
+    text-align: left;
+    width: 93%;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	}
+	
+.hdr-wrap .search-divd {
+    float: right;
+    height: 1.5em;
+	margin: 2px 0;
+    line-height: 1.5em;
+    border-right: 1px solid #fff;
+	}
+	
+.hdr-wrap .row-fluid { width: 100%; }
+
+.hdr-wrap .row-fluid .searchbutton { background-color: #cccccd;}
+	
+.hdr-wrap .row-fluid [class*="span"], 
+.hdr-wrap .row-fluid [class*="pans"] {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    display: block;
+    box-sizing: border-box;
+	}
+	
+.hdr-wrap .row-fluid .span14, 
+.hdr-wrap .row-fluid .pans14 {
+    width: 87.5%;
+	}
+
+	
+.hdr-wrap .row-fluid .span2, 
+.hdr-wrap .row-fluid .pans2 {
+    height: 30px;
+    width: 2.2em;
+	}
+	
+.hdr-wrap .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+    text-align: center;
+	}
+	
+.hdr-wrap .searchbutton .sicon {
+    cursor: pointer;
+    float: left;
+    margin: 19% 0 0 28%;
+	}
+	
+.hdr-wrap .icon-search {
+    width: 14px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0) url(../images/sprite.png) no-repeat scroll 0 -48px;
+	}
+	
+/*************** ----- Content Container ----- *****************/
+.content-container {}
+
+.content-container .content-hdr {
+    width: 100%;
+    z-index: 1;
+	padding: 18px 0;
+	box-sizing: border-box;
+    min-height: 90px;
+    
+	background: #d3d3d3;
+    background: linear-gradient(to bottom, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit-gradient(to bottom, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit--webkit-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit--moz-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit--o-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -webkit--ms-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -moz--webkit-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -moz--moz-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -moz--o-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -moz--ms-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -ms--webkit-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -ms--moz-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -ms--o-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -ms--ms-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -o--webkit-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -o--moz-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -o--o-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+    background: -o--ms-linear-gradient(top, #d3d3d3 1px, #ededed 30%, #ededed 80%, #d3d3d3 99%) repeat scroll 0 0;
+	}
+	
+.content-hdr .content-wrap {
+	width: auto;
+	margin: 0 auto;
+	max-width: 940px;
+	}
+
+.content-hdr h1.hdr-txt {
+	margin: 0;
+	color: #00728f;
+	font-size: 35px;
+	text-align: left;
+	padding: 10px 0 0;
+	line-height: 1.05;
+	font-weight: normal;
+	font-family: "ProximaNova-Reg","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+	
+#jobportal { font-size: 150%;}
+	
+#jobportal .content-wrap {
+	width: auto;
+	max-width: 980px;
+	margin: 0 auto 1em;	
+	}
+
+/***************  Taleo Banner *****************/	
+.taleo_banner {
+    width: 100%;
+    height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #000 url("../images/banner-v3.jpg") no-repeat scroll center top;
+	}
+	
+/*************** Taleo Job Portal *****************/
+#jobportal {
+	border: 1px solid #5f7175;
+	background: linear-gradient(to bottom,#ccc 0,#fff 25%,#fff 75%,#ccc 100%);
+	}
+
+/*************** ----- Footer Section ----- *****************/
+#footer {}
+
+/*************** Footer Social / Subnav *****************/
+.ftr-sec-top {
+    background-color: #50b3cf;
+    border-top: 1px solid rgba(0, 114, 143, 0.2);
+    border-bottom: 1px solid rgba(0, 114, 143, 0.2);
+	}
+
+.ftr-wrap {
+    width: auto;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+	}
+	
+.ftr-wrap::before, .ftr-wrap::after,
+.ftr-row::before, .ftr-row::after {
+    content: "";
+    display: table;
+	}
+	
+.ftr-wrap::after, .ftr-row::after { clear: both;}
+
+.ftr-row { position: relative;}
+
+.ftr-social-links { float: left;}
+
+.ftr-sub-nav { 
+	float: left;
+	color: #ffffff;
+	padding-left: 12px;
+	}
+	
+.ftr-social-links .ftr-wrap,
+.ftr-social-links .ftr-sub-nav {
+	padding: 0;
+	max-width: 100%;
+	}
+	
+.ftr-social-links a {
+    width: 52px;
+    height: 52px;
+    float: left;
+    color: #fff;
+	box-sizing: border-box;
+    /*display: block;*/
+    position: relative;
+    border-bottom: medium none;
+    transition: background-color 0.2s ease 0s;
+    border-left: 1px solid rgba(0, 114, 143, 0.2);
+	}
+	
+.ftr-social-links a:hover {
+  border-bottom: none;
+  background-color: #00728f;
+	}
+	
+.ftr-social-links a:last-of-type { border-right: 1px solid rgba(0, 114, 143, 0.2); }
+	
+.ftr-social-links .imgLink {
+    width: 22px;
+    height: 21px;
+    margin-top: 14px;
+	}
+	
+.ftr-social-links .imgTwit {
+    width: 21px;
+    height: 18px;
+    margin-top: 17px;
+	}
+	
+.ftr-social-links .imgFace {
+    height: 21px;
+    margin-top: 14px;
+    width: 10px;
+	}
+
+.ftr-social-links .imgRss {
+    height: 18px;
+    margin-top: 16px;
+    width: 18px;
+	}
+	
+.ftr-social-links img { display: block;}
+
+.ftr-sub-nav .ftr-wrap {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-style: preserve-3d;
+	}
+	
+.ftr-sub-nav a, .ftr-sub-nav span {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 12px;
+    display: inline-block;
+    border-bottom: medium none;
+    font-family: "ProximaNova-Light","Franklin Gothic","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+	
+.ftr-sub-nav a { border-right: 1px solid #fff; text-decoration: none;}
+
+.ftr-links {}
+
+.ftr-links h6 a {
+	font-family: "ProximaNova-Bold","Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+
+.ftr-links a,
+#wrapper .ftr-links h6 a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	}
+	
+#wrapper .ftr-links a:hover { text-decoration: underline;}
+
+.ftr-links .findsltnw {
+    float: left;
+    width: 76.5957%;
+	}
+
+.ftr-links .explrmeetw {
+    float: left;
+    width: 23.4043%;
+    margin-bottom: 5em;
+	}
+	
+.ftr-links h6 {
+    color: #00728f;
+    line-height: 1.2;
+	font-size: 18px;
+    margin: 2em 0 1em;
+	display: block;
+	font-weight: normal;
+	text-rendering: optimizelegibility;
+    font-family: "ProximaNova-Bold","Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+
+.ftr-links h6 a {
+	color: #00728f;
+	text-transform: uppercase;
+	}
+	
+.ftr-links .vsolution { clear: both;}
+
+.ftr-links .solution.vsolution div {
+    float: left;
+    width: 33.33%;
+    margin: 0 0 2em;
+	}
+	
+.ftr-links .vsolution div:nth-child(2), 
+.ftr-links .vsolution div:nth-child(3) {
+    margin: 2em 0 0;
+	}
+	
+.ftr-links ul {
+    padding: 5px;
+	margin: 0;
+	list-style: none;
+	}
+	
+.ftr-links ul li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: outside none none;
+	}
+	
+.ftr-links ul li a {
+    color: #767676;
+    font-size: 1.1em;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: Verdana,Geneva,sans-serif,Arial,Helvetica,sans-serif;
+	}
+	
+.ftr-links ul li a b {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: "ProximaNova-Bold","Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	}
+	
+.ftr-links ul li a b i { display: inline;}
+	
+.ftr-links .vsolution li.subhead a {
+    color: #00728f;
+    font-size: 1.1em;
+    font-weight: 700;
+	}
+
+
+/***************//* Override Default Styles //*****************/
+#wrapper #headerPanelContainer #jobcart-state .jobcart-link { background: url(../images/ico-cart.png) no-repeat left center; }
+#jobportal font { font-size: inherit; font-family: inherit;}
+#jobportal form { font-size: 62.5%;}
+#jobportal .mainsection { margin: 0;}
+#jobportal #facetedSearchBody #jobs th a { color: #00728f;}
+#jobportal #facetedSearchBody #jobs th[scope=col] { font-size: 16px; text-transform: uppercase; font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif;}
+#jobportal .mainsection .headersection .headerpanel { background-color: #50b4cf; padding-top: 0;}
+#jobportal .headersection .metalink a { font-size: 15px; }
+
+#jobportal .headersection .headerpanel .metapanel .metalinkimg {
+	width: 18px;
+	height: 16px;
+	padding-top: 16px;
+	padding-left: 18px; 
+	box-sizing: border-box;
+	background: url(../images/cart_white.gif) no-repeat;
+	}
+	
+#jobportal .headersection .headerpanel .userpanel,
+#jobportal .headersection .headerpanel .metapanel { padding-top: 10px;}
+#jobportal .headersection .headerpanel .userpanel .separator { float: left;}
+#jobportal .headersection .headerpanel .userpanel .separator,
+#jobportal .headersection .headerpanel .metapanel .metagrouppanel .separator { font-size: 15px; color: #ffffff; min-height: 20px;}
+
+#jobportal .headersection .headerpanel .metapanel .metagrouppanel .metalink,
+#jobportal .headersection .headerpanel .metapanel .metagrouppanel .separator { /*display: table-cell;*/}
+
+#jobportal .headersection .headerpanel .metapanel .metagrouppanel .separator { padding: 0 5px; top: 2px; position: relative;}
+
+#jobportal .headerpanel { min-height: 85px;}
+#jobportal .headerpanel #tabs { bottom: 14px; padding-left: 0; background-color: #ffffff;}
+#jobportal #jobsearch-link, #jobportal #jobpage-link, #jobportal .link, #jobportal .link a, #jobportal .selectedlink span, #jobportal .selectedlink { color: #ffffff; border: none; font-size: 18px;}
+
+#jobportal .headersection .headerpanel .linkpanel li.link { margin: 0; padding: 0;}
+#jobportal .headersection .headerpanel .linkpanel li + li.link, #jobportal .headerpanel .selectedlink span{ border-left: 2px solid #ffffff;}
+
+#jobportal .headerpanel #jobsearch-link { padding-left: 10px;}
+
+#jobportal #jobsearch-link,
+#jobportal .headersection .headerpanel .linkpanel li.link:first-child a { padding-left: 0; padding-right: 2em; margin-right: 0;}
+#jobportal #jobpage-link,
+#jobportal .selectedlink span,
+#jobportal .headersection .headerpanel .linkpanel li + li.link a:last-child { padding-left: 2em; margin-right: 0;}
+
+#jobportal li.selectedlink:first-child { padding-left: 0; padding-right: 2em; margin-right: 0;}
+#jobportal li.selectedlink:first-child span { border-left: none; padding-left: 0;}
+
+#jobportal span.headersection span.headerpanel .linkpanel li.link:first-child a { /*padding-left: 10px;*/}
+
+#jobportal #jobsearch-link { border-right: 1px solid #ffffff;}
+#jobportal #jobpage-link { border-left: 1px solid #ffffff;}
+
+#jobportal .info-panel { padding: 1% 0;}
+#jobportal .masterbody { background: transparent;}
+.mainsection .inputbutton { margin-left: 0; margin-right: 6px; border: none;}
+#wrapper span.username { float: left;}
+#wrapper .username { font-size: 15px; color: #ffffff;}
+.headerpanel .metapanel a { color: #ffffff; text-decoration: none; font-size: 15px;}
+#wrapper #headerPanelContainer a.username-button { color: #ffffff; font-size: 15px; background: url(../images/arr_down.png) no-repeat right center;	}
+#sortBySelect, #sortingOrder, #JOB_LOCALE-select, #jobportal select { font-size: 14px;}
+#rssFeedPanel { text-align: right;}
+#jobsTableContainer { background-color: #ffffff;}
+#jobportal #infoPanel h1.info-panel-title { padding-left: 0px;}
+
+#jobportal .accessmanagement .titlepage,
+#jobportal .accessmanagement .page-heading-header-title { margin-bottom: 6px; font-size: 24px; font-weight: bold; font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif;}
+#jobportal .accessmanagement .page-header-text p,
+#jobportal .accessmanagement .page-header-text span,
+#jobportal .accessmanagement .page-header-text p span { font-family: inherit;}
+#jobportal .accessmanagement .page-header-text { font-size: 18px; text-align: justify; /*font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif;*/}
+#jobportal .accessmanagement .blockpanel .entity-label { font-size: 13px;}
+
+#jobportal .mainsection .myjobpage .messagenotepanel,
+#jobportal .mainsection .iconpanelupdated, #jobportal .mainsection .iconcontentpanelupdated { background-color: #f1f1f2;}
+#jobportal .mainsection .jobupdated {color: #000000;}
+
+#jobportal .mainsection .iframepanel { font-size: 16px;}
+
+jobportal .mainsection .metapanel .metalink a[title="View a printable version of the job description"],
+#jobportal .mainsection .metapanel .metalink a[title="View a printable version of the job description"]:hover { color: #50b4cf;}
+
+#jobportal .blockpanel fieldset.menuHierarchy label,
+#jobportal .blockpanel fieldset.entity-value label { font-size: 14px;}
+#jobportal .blockpanel fieldset.menuHierarchy { font-size: 14px; padding: 5px;}
+#jobportal input.search-button[type="button"] { height: 25px;}
+
+#jobportal .accessmanagement .block-main-border-fix .button-group-center { padding-left: 0;}
+
+#jobportal input[type="button"], .alert-content input[type="button"],
+#jobportal .accessmanagement .button-group-center a { 
+	height: auto;
+	font-size: 15px; 
+	padding: 8px 12px; 
+	margin-right: 8px; 
+	border: none; 
+	color: #ffffff; 
+	display: inline-block;
+	text-transform: uppercase; 
+	font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif; 
+	}
+
+.alert-content input[type="button"] { margin-right: 12px;}
+#jobportal .accessmanagement .entity-value { font-size: 14px;}
+#jobportal .accessmanagement .button-group-center { display: inline-block;}
+#jobportal .accessmanagement .dialog-columns-2 { padding: 0 15px 0 0}
+#jobportal .accessmanagement .dialog-columns-openid-text { font-size: 13px; font-weight: bold; font-family: "Verdana","ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif;}
+#jobportal .accessmanagement .dialog-columns-2 .entity-label { text-transform: uppercase; margin-top: 12px;}
+
+#jobportal .accessmanagement .dialog-columns input,
+#jobportal .accessmanagement .dialog-columns-2 input { min-width: 250px;}
+
+#jobportal .accessmanagement .block-main-border-wide-fix { padding-bottom: 16px; padding-left: 20px; display: inline-block;}
+#jobportal .accessmanagement .block-main-border-wide-fix .message-notification { font-size: 12px;}
+#jobportal .accessmanagement .entity-mandatory-field,
+#jobportal .accessmanagement .entity-label,
+#jobportal .accessmanagement .iam-link-small-no-text-decoration a { font-size: 12px; font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif; font-style: normal;}
+#jobportal .accessmanagement .iam-link-small-no-text-decoration a { color: #50b4cf; text-decoration: none;}
+#jobportal .accessmanagement .entity-mandatory-field { color: red;}
+#jobportal .accessmanagement .mainsection .iframepanel { font-size: 14px;}
+#jobportal .accessmanagement .button-group-center a { background-color: #6db33f; text-decoration: none;}
+
+#jobportal .blockpanel input[value="I Accept"], #jobportal input[value="OK"], #jobportal input[value="Attach"], 
+#jobportal input[value="Yes"], .alert-content input[value="Yes"] { background-color: #6db33f;}
+
+#jobportal input[value="Attach"] { padding: 4px 12px;}
+
+#jobportal input[value="Apply Online"], #jobportal input[value="Save as Draft"], #jobportal input[value="Quit"], #jobportal input[value="Sign Out"],  #jobportal input[value="No"],
+.alert-content input[value="No"], #jobportal input[value="I Decline"], #jobportal input[value="New User"], #jobportal input[value="Cancel"], #jobportal input[value="Clear"] { background-color: #5db8d2;} /* 4d4e4a */
+
+html > body .headersection .headerpanel .linkpanel .link .magnifierimg,
+html > body .headersection .headerpanel .linkpanel .selectedlink .magnifierimg { display: none;}
+#jobportal .boxtop, #jobportal .boxresultsbottom, #jobportal .boxtraintop, #jobportal .boxbottom { display: none;}
+#jobportal #seeAllOlfPanel .mainsection { background-color: #ffffff;}
+#jobportal #seeAllOlfPanel #cancelAction a { padding: 4px 10px; background-color: #50b4cf; color: #ffffff; border-radius: 4px; display: inline-block;}
+#jobportal #seeAllOlfPanel a#addAction { background-color: #6db33f;}
+
+#jobportal .footeraction .footeractionpanel { border-color: transparent; background-color: transparent;} /* add background-color: #ffffff to bgcolor -- Removed for transparent BG */
+
+#jobportal .jobsearch .filter-group .filter-link a,
+#jobportal .footeraction .footeractionpanel .footergroupactionpanel .metalink2 a { color: #50b4cf;}
+
+#jobportal .myjobpage .footeraction .footeractionpanel { border-color: transparent;}
+
+
+#jobportal .mainsection .helppanel .iconpanel img[src="/careersection/2015PRD.2.4.45.3.0/images/cart_white.gif"] {
+	width: 18px;
+	height: 17px;
+	padding-top: 17px;
+	padding-left: 18px; 
+	box-sizing: border-box;
+	background: url(../images/cart_black.gif) no-repeat;
+	}
+
+/*************** Advance Search Page *****************/
+#jobportal .mainsection .jobsearch {}
+#jobportal .mainsection .jobsearch h1 .subtitle { font-size: 24px;}
+#jobportal .mainsection .jobsearch h2 .subtitle { font-size: 18px;}
+#jobportal .mainsection .jobsearch .label { font-size: 14px; text-transform: uppercase;}
+#jobportal .mainsection .jobsearch .contentgrouppanel .inputtext { width: 98%; font-size: 14px; padding: 2px 4px; border: 1px solid #d8d4d6; margin: 4px 0 16px;}
+#jobportal .mainsection .jobsearch li.selectedlink:first-child { padding-left: 8px;}
+#jobportal .mainsection .jobsearch li.selectedlink .linklabel { padding-left: 4px; font-size: 14px; color: #000000;}
+#jobportal .mainsection .jobsearch img.rssindicator { padding-top: 3px;}
+#jobportal .mainsection .jobsearch .labelcontent, #jobportal .mainsection .jobsearch .contentdatapanel .searchLookup { font-size: 14px;}
+#jobportal .mainsection .jobsearch .leftLayout #resultListPanel #listTopPanel #help button { padding: 0;}
+
+#jobportal #advanced-search-panel-container .advanced-search-title { font-size: 18px;}
+#jobportal #advanced-search-panel-container .widget-title { font-size: 16px;}
+#jobportal #advanced-search-panel-container .add-olf-link a { font-size: 12px;}
+#jobportal #advanced-search-panel-container .criteria-label-wrapper { font-size: 14px;}
+
+
+/*************** My Account Page *****************/
+#jobportal .myaccount .tablelist { border-spacing: 0;}
+#jobportal .myaccount .columnfull { padding-right: 0;}
+#jobportal .myaccount .columnfull .blockpanel { margin-right: 0;}
+#jobportal .myaccount .columnfull .titleblock,
+#jobportal .myaccount .columnfull .blockpanel .metalink2 a { color: #ffffff;}
+
+#jobportal .myaccount .footeraction .footeractionpanel { border-color: transparent;}
+
+/*************** Summary Page *****************/
+#jobportal .mainsection .summary .tablelist .columnfull .headerblockpanel h2.no-change-header span.titleblock,
+#jobportal .mainsection .summary .tablelist .columnfull .headerblockpanel .separator,
+#jobportal .mainsection .summary .tablelist .columnfull .headerblockpanel .metalink2 a { color: #ffffff;}
+
+/*************** Resume Upload Page *****************/
+#jobportal .mainsection .text,
+#jobportal .mainsection .tablelistindent .text-inline { font-size: 14px; text-align:justify;}
+
+/*************** Job Cart Page *****************/
+#jobportal .headersection .link2panel .selectedlink2 a,
+#jobportal .headersection .link2panel .link2 a { color: #ffffff; font-size: 13px;}
+
+#jobportal .headersection .link2panel .selectedlink2 span { font-size: 13px;}
+
+#jobportal .headersection .link2panel .separatorlink2,	
+#jobportal .headersection .link2panel .link2 a:hover { color: #ffffff;}
+#jobportal .mainsection .searchresults .resultstitlepanel .subtitle, 
+#jobportal .mainsection .myjobpage .resultstitlepanel .subtitle, 
+#jobportal .mainsection .subscribepage .header .subtitle { font-size: 16px;}
+
+#jobportal .mainsection .jobcontentpanel span { font-size: 13px; color: #575757;}
+#jobportal .mainsection .jobcontentpanel span a { font-size: 12px; text-decoration: underline; color: #50b4cf;}
+
+#jobportal .mainsection .pagerpanel .pagersectionpanel .pagerlabel { font-size: 13px; display: block;}
+
+/*************** Descripion Page *****************/
+#jobportal .requisitionDescription {}
+#jobportal .requisitionDescription .titlepage { font-size: 18px;}
+#jobportal .requisitionDescription .subtitle { font-size: 14px;}
+#jobportal .requisitionDescription p { margin: 0;}
+#jobportal .requisitionDescription br { display: none;}
+#jobportal .requisitionDescription iframe#ftlFrame { background-color: #ffffff;}
+
+/*************** Personal Information Page *****************/
+#jobportal .mainsection .headerpanel { padding-top: 5px; background-color: transparent; border-bottom: none;} /* add #ffffff to bgcolor -- Removed for transparent BG */
+#jobportal .mainsection .headerpanel .metapanel .metalink a { color: #50b4cf; font-size: 14px;}
+#jobportal .mainsection .headerpanel .metapanel .flowstatus,
+#jobportal .mainsection .headerpanel .infopanel .infojob,
+#jobportal .mainsection .headerpanel .infopanel .metalink2 a { font-size: 14px;}
+#jobportal .mainsection .footeractionpanel { background-color: transparent; border-color: silver; border-top-color: transparent; border-bottom-width: 1px;} /* add #ffffff to bgcolor -- Removed for transparent BG */
+#jobportal .mainsection .footeractionpanel,
+#jobportal .mainsection .headerpanel .buttonpanel-container { height: auto; overflow: hidden;}
+#jobportal .mainsection .headerpanel .buttongrouppanel2 .on-the-left { margin-top: 1em;}
+#jobportal .mainsection .headerpanel .datatrain-wagon span { font-size: 10px;}
+/*#jobportal .mainsection .headerpanel .datatrain-wagon { width: 90px; height: 50px; font-size: 11px;}*/
+#jobportal .mainsection .blockpanel a,
+#jobportal .mainsection .blockpanel .metalink { text-decoration: none;}
+#jobportal .mastercontentpanel .tablelist {}
+
+#jobportal .blockpanel fieldset.no-border .legend-pos { margin-left: 0;}
+#jobportal .blockpanel .entity-value, #jobportal .blockpanel .entity-label { font-size: 14px;}
+
+#jobportal .blockpanel .descriptionpanel br { display: none;}
+#jobportal .blockpanel .descriptionpanel .entity-value { font-size: 14px; max-width: 100%;}
+
+/*************** Education and Experience Page *****************/
+.sugInput-sug { color: #000000;}
+
+#jobportal .blockpanel .title { font-size: 18px;}
+
+#jobportal .blockpanel fieldset .title { font-size: 16px;}
+#jobportal .blockpanel fieldset .entity-noframe { margin-bottom: 5px;}
+#jobportal .blockpanel fieldset .separatorhorizontalpanel { padding-bottom: 5px; margin-bottom: 5px;}
+
+#jobportal .blockpanel .custom-form-grid { border-collapse: collapse;}
+#jobportal .blockpanel .custom-form-grid fieldset fieldset { margin-left: 0;}
+
+/*************** Questions Page *****************/
+#jobportal .formskill .tableskills .skillsgrouppanel fieldset { background-color: transparent;}
+
+/*************** Attachments Page *****************/
+#jobportal .mainsection .blockpanel .attachment-list .attachment-list-column span.text { font-size: 1.0em;}
+
+/*************** EEO Page *****************/
+#jobportal .mainsection .blockpanel .textindentpanel select.inputselect1 { width: 260px;}
+
+/*************** eSignature Page *****************/
+#jobportal .mainsection .blockpanel .entity-indent { margin-top: 1em;}
+#jobportal .mainsection .blockpanel table.custom-form-grid tr:first-child td.custom-form-columns:nth-child(2):last-child { padding-left: 22px;}
+#jobportal .mainsection .blockpanel table..custom-form-grid td.custom-form-columns input.entity-value[type="text"] { width: 250px;}
+
+/*************** Alert Box *****************/
+.alert-title { font-size: 18px; text-align: left;}
+.alert-full-page-container .alert-message { font-size: 14px; text-align: left;}
+.alert-full-page-container .alert-frame .alert-button-panel input[type="submit"] {font-size: 15px; font-family: "ProximaNova-Bold","Franklin Gothic Medium",Arial,Sans-serif; padding: 8px 12px; margin-right: 8px; border: none; color: #ffffff; text-transform: uppercase; background-color: #6db33f;}
+.alert-full-page-container .alert-frame { background-color: #ffffff;}
+.alert-full-page-container .alert-message-notification { background-color: #ffffff; border: none;}
+
+#jobportal .messagewarningpanel, #jobportal .message-error { border: 1px solid #939598;}
+#jobportal .messagewarningpanel, #jobportal .message-warning,
+#jobportal .messageerrorpanel, #jobportal .message-error { background-color: #f1f1f2; }
+
+#jobportal .messagewarningpanel .messagetext { padding-bottom: 1em;}
+
+
+/*************** Train Box *****************/
+#jobportal .datatrain-tv, #jobportal .datatrain-tv-left-margin, #jobportal .datatrain-tv-right-margin { height: 7.6em;}
+#jobportal .datatrain-left-shifter, #jobportal .datatrain-right-shifter { padding-top: 2em;}
+#jobportal .datatrain-no-focus-left, #jobportal .datatrain-no-focus-right { top: 3.2em;}
+#jobportal .datatrain-focus { width: 7.6em; height: 5.5em; margin-top: 0.2em;}
+#jobportal .datatrain-focus .datatrain-wagon { width: 7.4em; height: 5.3em}
+#jobportal .datatrain-no-focus { width: 7.6em; height: 7.5em; padding-top: 0.9em;}
+#jobportal .datatrain-no-focus .datatrain-wagon { width: 7.4em; height: 5.3em}
+html>body #jobportal .datatrain-focus-left, html>body #jobportal .datatrain-focus-right { height: 7em; margin-top: 0.2em;}
+
+/*************** Pagination *****************/
+#jobPager, #jobPager a {
+	font-size: 13px;
+	}
+	
+.pagerpanel {
+	padding-top: 1em;
+	/*background-color: #ffffff;*/
+	}
+	
+#jobPager a#previous {
+	line-height: 12px;
+	padding-right: 7px;
+	display: inline-block;
+	border-right: 1px solid #acacac;
+	}
+	
+#jobPager ul.pager {
+	padding-left: 14px;
+	}
+	
+#jobPager ul.pager li {
+	font-size: 13px;
+	padding-right: 5px;
+	}
+	
+#jobPager ul.pager li:last-child {
+	padding-right: 14px;
+	}
+	
+#jobPager .pagersectionpanel ul.pager li.pagerlink a {
+	color: #00728f;
+	text-decoration: underline;
+	}
+	
+#jobPager a#next {
+	line-height: 12px;
+	padding-left: 7px;
+	display: inline-block;
+	border-left: 1px solid #acacac;
+	}
+/*************** Pagination End *****************/
+
+
+
+/*************** Transparent Background *****************/
+body #jobportal .masterbody, #jobportal .mainsection .mastercontentpanel, #jobportal .mainsection .mastercontentpanel2, #jobportal .jobsearch .resultpropertiescontentpanel, #jobportal .jobsearch .boxresultsb2, #jobportal .jobsearch .boxresultsb3, #jobportal .jobsearch .boxresultsb4, #jobportal .headersection .link2panel .link2 a:hover, #jobportal .jobsearch .tablelistradius, #jobportal .processesNotSelectedTaskItem td:hover, #jobportal .processes-table-link td:hover { background-color: transparent; }

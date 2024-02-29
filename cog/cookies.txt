@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+cognizant.taleo.net	TRUE	/careersection/	FALSE	1999999999	locale	en
+cognizant.taleo.net	TRUE	/careersection	FALSE	1999999999	JSESSIONID	lpvzjZPSgWS0E9n9Px6TQ1q2L7ZmOoil8dLidPWT1bqp3IbRhE61!559369413
+
